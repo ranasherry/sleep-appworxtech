@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sleep_sounds/app/data/more_sounds_model.dart';
+import 'package:sleep_sounds/app/modules/home/controller/app_lovin_provider.dart';
 import 'package:sleep_sounds/app/modules/home/controller/custom_sound_ctl.dart';
 import '../../utills/images.dart';
 import '../../utills/size_config.dart';
@@ -319,6 +320,7 @@ class CustomSoundView extends GetView<CustomSoundCTL> {
       children: [
         GestureDetector(
           onTap: () {
+            AppLovinProvider.instance.showInterstitial();
             controller.toggleSoundSelection(customSound);
           },
           child: Obx(
