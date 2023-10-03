@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037269428595",
+    "project_id": "sleep-appworxtech",
+    "storage_bucket": "sleep-appworxtech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037269428595:android:4d379bb474055d24cd7d06",
+        "android_client_info": {
+          "package_name": "com.relaxingsounds.relaxingmusicsleepsounds"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm4DGhlno8RN6GpGTt6vwf61qacLmWrkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

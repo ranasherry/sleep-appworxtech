@@ -2,6 +2,7 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sleep_sounds/app/modules/home/controller/app_lovin_provider.dart';
 import '../../utills/size_config.dart';
 import '../controller/nav_view_ctl.dart';
 
@@ -18,7 +19,14 @@ class NavView extends GetView<NavCTL> {
             containerHeight: SizeConfig.blockSizeHorizontal * 18,
             backgroundColor: Colors.black,
             itemCornerRadius: 15,
-            onItemSelected: (index) => controller.current_index.value = index,
+            onItemSelected: (index) {
+              controller.current_index.value = index;
+              controller.navAdCounter++;
+              if (controller.navAdCounter == 4) {
+                AppLovinProvider.instance.showInterstitial();
+                controller.navAdCounter = 0;
+              }
+            },
             selectedIndex: controller.current_index.value,
             items: [
               BottomNavyBarItem(

@@ -6,6 +6,8 @@ import '../views/settings_view.dart';
 
 class NavCTL extends GetxController {
   RxInt current_index = 0.obs;
+
+  int navAdCounter = 1;
   final screens = [
     HomeView(),
     CustomSoundView(),
