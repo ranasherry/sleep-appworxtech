@@ -53,7 +53,7 @@ class CustomSoundView extends GetView<CustomSoundCTL> {
             physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                childAspectRatio: 2 / 2,
+                childAspectRatio: 1.7 / 2,
                 crossAxisCount: 3,
                 crossAxisSpacing: SizeConfig.blockSizeHorizontal * 3,
                 mainAxisSpacing: SizeConfig.blockSizeHorizontal * 3),
@@ -86,7 +86,7 @@ class CustomSoundView extends GetView<CustomSoundCTL> {
             physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                childAspectRatio: 2 / 2,
+                childAspectRatio: 1.7 / 2,
                 crossAxisCount: 3,
                 crossAxisSpacing: SizeConfig.blockSizeHorizontal * 3,
                 mainAxisSpacing: SizeConfig.blockSizeHorizontal * 3),
@@ -122,7 +122,7 @@ class CustomSoundView extends GetView<CustomSoundCTL> {
             physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                childAspectRatio: 2 / 2,
+                childAspectRatio: 1.7 / 2,
                 crossAxisCount: 3,
                 crossAxisSpacing: SizeConfig.blockSizeHorizontal * 3,
                 mainAxisSpacing: SizeConfig.blockSizeHorizontal * 3),
@@ -155,7 +155,7 @@ class CustomSoundView extends GetView<CustomSoundCTL> {
             physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                childAspectRatio: 2 / 2,
+                childAspectRatio: 1.7 / 2,
                 crossAxisCount: 3,
                 crossAxisSpacing: SizeConfig.blockSizeHorizontal * 3,
                 mainAxisSpacing: SizeConfig.blockSizeHorizontal * 3),
@@ -182,7 +182,7 @@ class CustomSoundView extends GetView<CustomSoundCTL> {
             physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                childAspectRatio: 2 / 2,
+                childAspectRatio: 1.7 / 2,
                 crossAxisCount: 3,
                 crossAxisSpacing: SizeConfig.blockSizeHorizontal * 3,
                 mainAxisSpacing: SizeConfig.blockSizeHorizontal * 3),
@@ -215,7 +215,7 @@ class CustomSoundView extends GetView<CustomSoundCTL> {
             physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                childAspectRatio: 2 / 2,
+                childAspectRatio: 1.7 / 2,
                 crossAxisCount: 3,
                 crossAxisSpacing: SizeConfig.blockSizeHorizontal * 3,
                 mainAxisSpacing: SizeConfig.blockSizeHorizontal * 3),
@@ -243,7 +243,7 @@ class CustomSoundView extends GetView<CustomSoundCTL> {
             physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                childAspectRatio: 2 / 2,
+                childAspectRatio: 1.7 / 2,
                 crossAxisCount: 3,
                 crossAxisSpacing: SizeConfig.blockSizeHorizontal * 3,
                 mainAxisSpacing: SizeConfig.blockSizeHorizontal * 3),
