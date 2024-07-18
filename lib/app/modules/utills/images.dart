@@ -15,6 +15,7 @@ class AppImages {
   static const airplane = "assets/icons/airplane.jpg";
   static const cafe = "assets/icons/cafe.jpg";
   static const train = "assets/icons/train.jpg";
+  static const splash = "assets/icons/splash_icon.png";
 }
 
 class CustomImages {

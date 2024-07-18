@@ -6,18 +6,25 @@ import 'package:sleep_sounds/app/modules/home/views/home_view.dart';
 import 'package:sleep_sounds/app/modules/home/views/nav_view.dart';
 import 'package:sleep_sounds/app/modules/home/views/playerview.dart';
 import 'package:sleep_sounds/app/modules/home/views/settings_view.dart';
+import 'package:sleep_sounds/app/modules/home/views/splash_screen.dart';
 import '../home/bindings/home_view_binding.dart';
 import '../home/bindings/player_view_binding.dart';
 import '../home/bindings/settings_binding.dart';
+import '../home/bindings/splash_screen_binding.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.NavView;
+  static const INITIAL = Routes.SplashScreen;
 
   static final routes = [
+    GetPage(
+      name: _Paths.SplashScreen,
+      page: () => SplashScreen(),
+      binding: SplashBinding(),
+    ),
     GetPage(
       name: _Paths.HomeView,
       page: () => HomeView(),

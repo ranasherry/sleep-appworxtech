@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
     observer.analytics.setAnalyticsCollectionEnabled(kReleaseMode);
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      navigatorObservers: <NavigatorObserver>[observer],
       theme: ThemeData(
         useMaterial3: true,
         // appBarTheme: AppBarTheme(color: AppColors.backgroundColor
