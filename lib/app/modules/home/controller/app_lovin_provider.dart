@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:applovin_max/applovin_max.dart';
+import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
 import '../../utills/app_strings.dart';
@@ -32,13 +33,15 @@ class AppLovinProvider {
   var isWidgetMRecShowing = false;
 
   void init() {
-    initializePlugin();
+    if (kReleaseMode) {
+      initializePlugin();
+    }
   }
 
   Future<void> initializePlugin() async {
     print("Initializing SDK...");
 
-    Map? configuration = await AppLovinMAX.initialize(_sdk_key);
+    MaxConfiguration? configuration = await AppLovinMAX.initialize(_sdk_key);
     if (configuration != null) {
       isInitialized.value = true;
 

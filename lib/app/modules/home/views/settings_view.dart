@@ -40,11 +40,19 @@ class SettingsView extends GetView<SettingsCTL> {
               ),
             ),
           ),
-          settings_btn(
-              "Rate us",
-              CupertinoIcons.hand_thumbsup_fill,
-              "Help us to grow with your 5 star",
-              Icons.arrow_forward_ios_rounded),
+          GestureDetector(
+            onTap: () {
+              controller.rateApp();
+              // LaunchReview.launch(
+              //   androidAppId: "com.relaxingsounds.relaxingmusicsleepsounds",
+              // );
+            },
+            child: settings_btn(
+                "Rate us",
+                CupertinoIcons.hand_thumbsup_fill,
+                "Help us to grow with your 5 star",
+                Icons.arrow_forward_ios_rounded),
+          ),
           GestureDetector(
             onTap: () {
               controller.ShareApp();
