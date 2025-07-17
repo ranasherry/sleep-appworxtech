@@ -31,11 +31,21 @@ class PlayerViewCTL extends GetxController {
     isPlaying.value = true;
     check.value = true;
     // AudioCache();
-    if (isLoop.value) {
-      instance = await player.loop(t);
-    } else {
-      instance = await player.loop(t);
+    // if (isLoop.value) {
+    //   instance = await player.loop(t);
+    // } else {
+    //   instance = await player.loop(t);
+    // }
+
+      instance = AudioPlayer();
+  await instance.play(AssetSource(t));
+  await instance.setReleaseMode(ReleaseMode.loop); // Enable looping
+
+  instance.onPlayerStateChanged.listen((state) {
+    if (state == PlayerState.completed) {
+      isPlaying.value = false;
     }
+  });
 
     audioTimer = Timer(Duration(seconds: selectedDuration.value), () {
       stopAudioAndVibration();
@@ -48,11 +58,11 @@ class PlayerViewCTL extends GetxController {
     String? abc = countDownController.getTime();
     print("abc ${abc}");
 
-    instance.onPlayerCompletion.listen((event) {
-      // Set the flag to true when the sound is complete
-      // Vibration.cancel();
-      isPlaying.value = false;
-    });
+    // instance.onPlayerCompletion.listen((event) {
+    //   // Set the flag to true when the sound is complete
+    //   // Vibration.cancel();
+    //   isPlaying.value = false;
+    // });
   }
 
   @override
@@ -97,7 +107,7 @@ class PlayerViewCTL extends GetxController {
     try {
       await instance.stop();
 
-      await instance.play(h);
+      await instance.play(AssetSource(h));
     } catch (e) {}
   }
 
